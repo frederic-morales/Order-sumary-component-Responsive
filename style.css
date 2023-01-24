@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.main-container{
+    width: 90%;
+    max-width: 500px;
+    height: 90vh;
+    max-height: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+.main-container .mobile-image-container{
+    width: 100%;
+    max-height: 20%;
+}
+.main-container .mobile-image-container img{
+    width: 100%;
+    max-height: 100%;
+}
+
