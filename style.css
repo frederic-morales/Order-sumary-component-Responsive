@@ -9,6 +9,7 @@
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
+    --Red-hat-display: 'Red Hat Display', sans-serif;
 }
 html{
     font-size: 62.5%;
@@ -16,23 +17,29 @@ html{
 main{
     display: flex;
     width: 100%;
+    height: 100vh;
+    padding: 16% 7% 16% 7%;
     justify-content: center;
     background-color: var(--Pale-blue);
     background-image: url(./images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
+    font-size: 1.6rem;
+    font-family: var(--Red-hat-display);
 }
 .main-container{
-    width: 90%;
+    width: 100%;
     max-width: 500px;
-    height: 90vh;
-    max-height: 900px;
+    height: 100%;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .main-container .mobile-image-container{
     width: 100%;
-    max-height: 20%;
+    max-height: 30%;
 }
 .main-container .mobile-image-container img{
     width: 100%;
@@ -43,4 +50,53 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.main-container .section h1{
+    margin-top: 2.5rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    font-size: 2.2rem;
+}
+.main-container .section .section-paragraph{
+    text-align: center;
+    margin: 2.2rem 3rem 0 3rem;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    line-height: 1.5;
+}
+.main-container .section .section-content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 85%;
+    margin-top: 25px;
+    background-color: var(--Very-pale-blue);
+    padding: 15px 0 15px 0;
+    border-radius: 15px;
+}
+.main-container .section .section-content img, .main-container .section .section-content div{
+    margin-left: 15px;
+    font-size: 1.4rem;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    margin-bottom: 3px;
+}
+.main-container .section .section-content div .text-price{
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+.main-container .section .section-content a{
+    margin-left: 45px;
+    color: var(--Bright-blue);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.main-container .section .section-button{
+    margin-top: 2.5rem;
+    width: 85%;
+    padding: 13px 0 13px 0;
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: 900;
+    font-family: var(--Red-hat-display);
 }
