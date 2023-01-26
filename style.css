@@ -136,7 +136,7 @@ main{
     main{
         background-image: url(./images/pattern-background-desktop.svg);
         background-size: 100vw 45vh;
-        padding: 6%;
+        padding: 4%;
     }
     .main-container{
         min-width: 400px;
